@@ -1,0 +1,27 @@
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.formContainer{
+    width: 40vw;
+    height: auto;
+    padding: 5vh 5vw;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 8px 1px black;
+    margin-bottom:5vh ;
+}
+.lables{
+    font-weight: 800;
+    font-size: larger;
+}
+input{
+    all: unset;
+    width: 35vw;
+    height: 6vh;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 1vh 2vw;
+    font-size: larger;
+    
+}
