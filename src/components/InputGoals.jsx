@@ -11,7 +11,10 @@ const InputGoals = (props) => {
     }
     const submitHandler = (event) =>{
         event.preventDefault();
-        props.enteredText(text);
+        if(text !==""){
+            props.enteredText(text);
+        }
+        
         
     }
   return (
