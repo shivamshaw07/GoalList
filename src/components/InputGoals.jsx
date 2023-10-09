@@ -4,10 +4,12 @@ import "./InputGoals.css"
 const InputGoals = (props) => {
     const [text,setText] = useState("");
     const enteredGoalHandler=(event)=>{
-       
-        setText(
+       if(event.target.value != ""){
+           setText(
             event.target.value
         )
+       }
+        
     }
     const submitHandler = (event) =>{
         event.preventDefault();
