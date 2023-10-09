@@ -7,8 +7,9 @@ const CourseList = (props) => {
   return (
     <ul >
      {props.items.map(goal => (
-        <CourseItem key={goal.id} id={goal.id} deleteItem={props.onDelete}>{goal.text} </CourseItem>
-       
+      if(goal !==){
+                <CourseItem key={goal.id} id={goal.id} deleteItem={props.onDelete}>{goal.text} </CourseItem>
+    }
      ))}
     </ul>
   )
